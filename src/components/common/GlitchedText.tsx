@@ -1,5 +1,5 @@
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import "../TextGlitch.css";
+import "./TextGlitch.css";
 
 function GlitchedText({ text }: { text: string }) {
   const { targetRef, isIntersecting } = useIntersectionObserver<HTMLDivElement>({

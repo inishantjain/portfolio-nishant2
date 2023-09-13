@@ -1,3 +1,7 @@
+import project1_image from "./assets/project1_2.png";
+import project2_image from "./assets/project2.png";
+import project3_image from "./assets/project3.png";
+
 export const user = {
   username: "Nishant Jain",
   resumeLink: "https://drive.google.com/", //TODO:
@@ -17,7 +21,7 @@ export const projects = [
   {
     id: 1,
     title: "Edtech Project",
-    img_url: "./src/assets/project1_2.png",
+    img_url: project1_image,
     github_url: "https://github.com/inishantjain/Studynotion-megaproject",
     link: "https://studynotion-megaproject.vercel.app/",
     technologiesIcon: ["react", "express", "node", "mongodb", "mongoose", "tailwind"],
@@ -25,7 +29,7 @@ export const projects = [
   {
     id: 2,
     title: "Sensor Dashboard",
-    img_url: "./src/assets/project2.png",
+    img_url: project2_image,
     github_url: "#",
     link: "https://github.com/inishantjain/Sensor-Dashboard",
     technologiesIcon: ["react", "express", "node", "chartjs", "styled components", "mysql"],
@@ -33,7 +37,7 @@ export const projects = [
   {
     id: 1,
     title: "Portfolio Project",
-    img_url: "./src/assets/project3.png",
+    img_url: project3_image,
     github_url: "https://github.com/inishantjain/myinitialprojects/tree/main/Portfolio%20Website",
     link: "https://nishant-project-portfolio.netlify.app/",
     technologiesIcon: ["html", "css", "js"],

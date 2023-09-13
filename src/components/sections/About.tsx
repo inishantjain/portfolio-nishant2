@@ -1,4 +1,5 @@
 import { about } from "../../portfolio";
+import illustration from "../../assets/illustration_about.png";
 import GlitchedText from "../common/GlitchedText";
 
 function About() {
@@ -14,7 +15,7 @@ function About() {
               <p key={i}>{para}</p>
             ))}
           </div>
-          <img width={400} src="./src/assets/illustration_about.png" alt="about_section_illustration_image" />
+          <img width={400} src={illustration} alt="about_section_illustration_image" />
         </div>
       </div>
     </section>

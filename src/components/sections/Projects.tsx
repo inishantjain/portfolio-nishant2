@@ -21,7 +21,7 @@ function Projects() {
               <img
                 className="h-full transition-transform absolute aspect-video group-hover:-translate-x-8 group-hover:-translate-y-8 top-0 left-0 z-0"
                 src={project.img_url}
-                alt="project_image"
+                alt={project.title}
               />
               <div className="flex h-[calc(100%-1.7rem)] flex-col gap-2 items-end justify-center">
                 <a title="Github Link" href={project.github_url}>
@@ -32,10 +32,6 @@ function Projects() {
                 </a>
               </div>
               <div title="Technologies used" className="flex justify-end gap-2 pr-8">
-                {/* <BiLogoReact />
-                <BiLogoTailwindCss />
-                <BiLogoMongodb />
-                <img width="28" src="https://asset.brandfetch.io/idFdo8ulhr/idzj34qGQm.png" /> */}
                 {project.technologiesIcon.map((tech) => {
                   switch (tech) {
                     case "react":

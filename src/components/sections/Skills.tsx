@@ -1,3 +1,4 @@
+import illustration from "../../assets/illustration_skills.png";
 import {
   BiLogoTailwindCss,
   BiLogoJavascript,
@@ -23,7 +24,7 @@ function Skills() {
           <GlitchedText text="skills" />
         </h2>
         <div className="mt-16 md:flex gap-5 justify-between">
-          <img width={400} src="./src/assets/illustration_skills.png" alt="skill_section_image" />
+          <img width={400} src={illustration} alt="skill_section_image" />
           <div className="space-y-4 mt-4">
             <h3 className="text-2xl">My object is oriented towards these skill sets.</h3>
             <div className="flex flex-wrap text-4xl gap-5 max-w-sm">
