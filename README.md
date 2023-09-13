@@ -21,11 +21,15 @@ This is my personal portfolio website showcasing my skills, projects, and contac
 
 ### Installation
 
-1. Clone the repository: `git clone `
+1. Clone the repository: `git clone https://github.com/inishantjain/portfolio-nishant2`
 2. Navigate to the project folder: `cd portfolio-nishant2`
 3. Run the following command in your terminal.
 ```bash
 npm run dev
+```
+4. Use the below command after  every time to make changes to the hosted site.
+```bash
+npm run deploy
 ```
 
 
@@ -52,6 +56,7 @@ If you'd like to contribute to this project, please follow these guidelines:
 
 ## Acknowledgments
 
-- Thanks to [Name of a library or framework you used] for making this project possible.
+- Inspiration is taken from some great developer portfolios and tried to create my own.
+- Thanks to - for making this project possible.
 
 
