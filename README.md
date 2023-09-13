@@ -1,27 +1,57 @@
-# React + TypeScript + Vite
+# Portfolio Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is my personal portfolio website showcasing my skills, projects, and contact information. It serves as a central hub to present my work to potential clients or employers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Home:** A brief introduction and welcome message.
+- **Skills:** Highlights my technical skills and expertise.
+- **Projects:** Displays a list of my featured projects with descriptions and links.
+- **About:** An section to describe about me.
+- **Contact:** Provides a contact form for inquiries and communication.
+  
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- A web browser to view the website.
+- An internet connection.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Installation
+
+1. Clone the repository: `git clone `
+2. Navigate to the project folder: `cd portfolio-nishant2`
+3. Run the following command in your terminal.
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Usage
+
+- Explore the website by clicking on the navigation links.
+- Check out my projects and skills.
+- Feel free to contact me using the provided form.
+- Download my resume if needed.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the project.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes and commit them (`git commit -m 'Add feature'`).
+4. Push to your branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
+
+## License
+
+
+
+## Acknowledgments
+
+- Thanks to [Name of a library or framework you used] for making this project possible.
+
+
