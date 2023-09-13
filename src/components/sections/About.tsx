@@ -14,7 +14,7 @@ function About() {
               <p key={i}>{para}</p>
             ))}
           </div>
-          <img width={400} src="illustration_about.png" alt="about_section_illustration_image" />
+          <img width={400} src="./src/assets/illustration_about.png" alt="about_section_illustration_image" />
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ function Home() {
           <AnimatedRole />
           <h2 className="mt-4">{user.title}</h2>
         </div>
-        <img width={400} className="aspect-square object-contain" src="/avatar.png" alt="avatar" />
+        <img width={400} className="aspect-square object-contain" src="./src/assets/avatar.png" alt="avatar" />
       </div>
     </main>
   );

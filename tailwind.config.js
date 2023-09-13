@@ -9,7 +9,7 @@ export default {
         mooli: ['"mooli"', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        dark: "url('./dark-bg.jpeg')",
+        dark: "url('./assets/dark-bg.jpeg')",
         // "footer-texture": "url('/img/footer-texture.png')",
       },
     },
