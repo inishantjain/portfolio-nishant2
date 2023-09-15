@@ -34,7 +34,7 @@ const AnimatedRole = () => {
     };
   }, []);
   return (
-    <div className="text-3xl">
+    <div className="text-2xl md:text-3xl">
       {role.split("").map((char, i) => (
         <span key={i + char}>{char || "&nbsp;"}</span>
       ))}

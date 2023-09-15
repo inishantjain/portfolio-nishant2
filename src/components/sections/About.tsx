@@ -9,7 +9,7 @@ function About() {
         <h2 className="font-semibold font-exo text-5xl tracking-wider">
           <GlitchedText text="about" />
         </h2>
-        <div className="md:flex justify-between items-center text-justify mt-16">
+        <div className="flex flex-col md:flex-row justify-between items-center text-justify mt-16">
           <div className="max-w-md space-y-4">
             {about.map((para, i) => (
               <p key={i}>{para}</p>

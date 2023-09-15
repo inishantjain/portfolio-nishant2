@@ -23,7 +23,7 @@ function Skills() {
         <h2 className="font-semibold font-exo text-5xl tracking-wider">
           <GlitchedText text="skills" />
         </h2>
-        <div className="mt-16 md:flex gap-5 justify-between">
+        <div className="mt-16 flex flex-col md:flex-row items-center gap-5 justify-between">
           <img width={400} src={illustration} alt="skill_section_image" />
           <div className="space-y-4 mt-4">
             <h3 className="text-2xl">My object is oriented towards these skill sets.</h3>

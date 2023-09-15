@@ -41,7 +41,7 @@ function Navbar() {
         </ul>
       </div>
       {/* large screen navbar */}
-      <div className="z-10 hidden md:block backdrop-blur-md mx-auto max-w-screen-lg fixed top-0 right-0 left-0 p-4">
+      <div className="z-10 hidden md:block backdrop-blur-md mx-auto fixed top-0 right-0 left-0 p-4">
         <ul className="flex justify-center gap-x-16">
           <li>
             <a href="#home">// home</a>

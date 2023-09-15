@@ -25,7 +25,7 @@ function Contact() {
         <h2 className="font-semibold font-exo text-5xl tracking-wider">
           <GlitchedText text="contact me" />
         </h2>
-        <div className="flex flex-col lg:flex-row mt-16 md:items-center gap-8">
+        <div className="flex flex-col lg:flex-row mt-16 items-center gap-8">
           <div className="flex-1">
             <h3 className="text-3xl">Got a Spark of Creativity? Give Me a Whirl</h3>
             <div className="flex text-5xl gap-5 mt-4">
