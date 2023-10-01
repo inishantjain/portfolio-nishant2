@@ -1,9 +1,17 @@
 import GlitchedText from "../common/GlitchedText";
 import { projects } from "../../portfolio";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
-import { BiLogoHtml5, BiLogoMongodb, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss } from "react-icons/bi";
+import {
+  BiLogoHtml5,
+  BiLogoMongodb,
+  BiLogoNodejs,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoPostgresql,
+  BiLogoRedux,
+} from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiPrisma } from "react-icons/si";
 
 function Projects() {
   return (
@@ -20,6 +28,7 @@ function Projects() {
             >
               <img
                 className="h-full transition-transform absolute aspect-video group-hover:-translate-x-8 group-hover:-translate-y-8 top-0 left-0 z-0"
+                loading="lazy"
                 src={project.img_url}
                 alt={project.title}
               />
@@ -36,10 +45,16 @@ function Projects() {
                   switch (tech) {
                     case "react":
                       return <BiLogoReact title={tech} />;
+                    case "redux":
+                      return <BiLogoRedux title={tech} />;
                     case "node":
                       return <BiLogoNodejs title={tech} />;
+                    case "prisma":
+                      return <SiPrisma title={tech} />;
                     case "mongodb":
                       return <BiLogoMongodb title={tech} />;
+                    case "postgresql":
+                      return <BiLogoPostgresql title={tech} />;
                     case "express":
                       return <SiExpress title={tech} />;
                     case "tailwind":

@@ -15,7 +15,7 @@ function About() {
               <p key={i}>{para}</p>
             ))}
           </div>
-          <img width={400} src={illustration} alt="about_section_illustration_image" />
+          <img loading="lazy" width={400} src={illustration} alt="about_section_illustration_image" />
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ import {
   BiLogoFirebase,
 } from "react-icons/bi";
 
-import { SiSolidity, SiNextdotjs, SiVercel, SiWeb3Dotjs } from "react-icons/si";
+import { SiSolidity, SiNextdotjs, SiVercel, SiWeb3Dotjs, SiPrisma } from "react-icons/si";
 import GlitchedText from "../common/GlitchedText";
 
 function Skills() {
@@ -24,7 +24,7 @@ function Skills() {
           <GlitchedText text="skills" />
         </h2>
         <div className="mt-16 flex flex-col md:flex-row items-center gap-5 justify-between">
-          <img width={400} src={illustration} alt="skill_section_image" />
+          <img loading="lazy" width={400} src={illustration} alt="skill_section_image" />
           <div className="space-y-4 mt-4">
             <h3 className="text-2xl">My object is oriented towards these skill sets.</h3>
             <div className="flex flex-wrap text-4xl gap-5 max-w-sm">
@@ -33,6 +33,7 @@ function Skills() {
               <BiLogoJavascript title="javascript" />
               <BiLogoTailwindCss title="tailwind" />
               <BiLogoReact title="react" />
+              <SiPrisma title="prisma" />
               <SiNextdotjs title="nextjs" />
               <BiLogoNodejs title="nodejs" />
               <BiLogoJava title="java" />

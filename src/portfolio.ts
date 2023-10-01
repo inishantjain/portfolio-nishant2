@@ -1,6 +1,7 @@
-import project1_image from "./assets/project1_2.png";
+import project1_image from "./assets/project1.png";
 import project2_image from "./assets/project2.png";
 import project3_image from "./assets/project3.png";
+import project4_image from "./assets/project4.png";
 
 export const user = {
   username: "Nishant Jain",
@@ -20,14 +21,22 @@ export const roles: string[] = [
 export const projects = [
   {
     id: 1,
+    title: "React Ai Project",
+    img_url: project4_image,
+    github_url: "https://github.com/inishantjain/mystiscript-ai-react",
+    link: "https://mystiscript-ai-react.vercel.app/",
+    technologiesIcon: ["react", "redux", "node", "express", "prisma", "postgresql", "tailwind"],
+  },
+  {
+    id: 2,
     title: "Edtech Project",
     img_url: project1_image,
     github_url: "https://github.com/inishantjain/Studynotion-megaproject",
     link: "https://studynotion-megaproject.vercel.app/",
-    technologiesIcon: ["react", "express", "node", "mongodb", "mongoose", "tailwind"],
+    technologiesIcon: ["react", "express", "redux", "node", "mongodb", "mongoose", "tailwind"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Sensor Dashboard",
     img_url: project2_image,
     github_url: "#",
@@ -35,7 +44,7 @@ export const projects = [
     technologiesIcon: ["react", "express", "node", "chartjs", "styled components", "mysql"],
   },
   {
-    id: 1,
+    id: 4,
     title: "Portfolio Project",
     img_url: project3_image,
     github_url: "https://github.com/inishantjain/myinitialprojects/tree/main/Portfolio%20Website",
