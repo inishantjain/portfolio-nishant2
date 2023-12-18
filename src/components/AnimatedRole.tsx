@@ -1,43 +1,28 @@
 import { useEffect, useState } from "react";
 import { roles } from "../portfolio";
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 const AnimatedRole = () => {
-  const [role, setRole] = useState<string>(roles[0]);
-  // const [roleIdx, setRoleIdx] = useState<number>(0);
+  const [roleIdx, setRoleIdx] = useState(0);
+  const [change, setIsTextChanging] = useState<boolean>(false); //for adding removing animation class to the container
   useEffect(() => {
-    let letterFlippingInterval = 0;
-    let roleIdx = 0;
-
-    const interval = setInterval(() => {
-      let countIteration = 10;
-      clearInterval(letterFlippingInterval);
-
-      letterFlippingInterval = setInterval(() => {
-        if (countIteration > 0) {
-          let str = "";
-          for (let i = 0; i < 15; i++) str += letters[Math.floor(Math.random() * 26)];
-          setRole(str);
-          countIteration--;
-        } else {
-          setRole(roles[roleIdx]);
-        }
-      }, 50);
-
-      roleIdx = (roleIdx + 1) % roles.length;
+    const intervalId = setInterval(() => {
+      setIsTextChanging(true);
+      setTimeout(() => {
+        setRoleIdx((prev) => (prev + 1) % roles.length);
+        setIsTextChanging(false);
+      }, 500);
     }, 3000);
-
     return () => {
-      clearInterval(interval);
-      clearInterval(letterFlippingInterval);
+      clearInterval(intervalId);
     };
   }, []);
+
   return (
-    <div className="text-2xl md:text-3xl">
-      {role.split("").map((char, i) => (
-        <span key={i + char}>{char || "&nbsp;"}</span>
-      ))}
+    <div className={`text-2xl md:text-3xl ${change && "animated-text-container"}`}>
+      &nbsp;
+      <span className="text-red-700">
+        [&nbsp;<span className="text-white text-xl md:text-2xl">{roles[roleIdx]}</span>&nbsp;]
+      </span>
     </div>
   );
 };

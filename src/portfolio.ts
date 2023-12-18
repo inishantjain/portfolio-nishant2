@@ -2,6 +2,7 @@ import project1_image from "./assets/project1.png";
 import project2_image from "./assets/project2.png";
 import project3_image from "./assets/project3.png";
 import project4_image from "./assets/project4.png";
+import project5_image from "./assets/project5.png";
 
 export const user = {
   username: "Nishant Jain",
@@ -19,6 +20,14 @@ export const roles: string[] = [
 ];
 
 export const projects = [
+  {
+    id: 0,
+    title: "NextJS Real Time Chat App",
+    img_url: project5_image,
+    github_url: "https://github.com/inishantjain/chat-app-nextjs",
+    link: "https://chat-app-nish.vercel.app/",
+    technologiesIcon: ["nextjs", "redis", "tailwind"],
+  },
   {
     id: 1,
     title: "React Ai Project",

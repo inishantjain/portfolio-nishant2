@@ -1,6 +1,7 @@
 import GlitchedText from "../common/GlitchedText";
 import { projects } from "../../portfolio";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import { TbBrandNextjs } from "react-icons/tb";
 import {
   BiLogoHtml5,
   BiLogoMongodb,
@@ -11,7 +12,7 @@ import {
   BiLogoRedux,
 } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
-import { SiExpress, SiPrisma } from "react-icons/si";
+import { SiExpress, SiPrisma, SiRedis } from "react-icons/si";
 
 function Projects() {
   return (
@@ -32,7 +33,7 @@ function Projects() {
                 src={project.img_url}
                 alt={project.title}
               />
-              <div className="flex h-[calc(100%-1.7rem)] flex-col gap-2 items-end justify-center">
+              <div className="flex h-[calc(100%-1.9rem)] flex-col gap-2 items-end justify-center">
                 <a title="Github Link" href={project.github_url}>
                   <AiFillGithub />
                 </a>
@@ -45,6 +46,8 @@ function Projects() {
                   switch (tech) {
                     case "react":
                       return <BiLogoReact title={tech} />;
+                    case "nextjs":
+                      return <TbBrandNextjs title={tech} />;
                     case "redux":
                       return <BiLogoRedux title={tech} />;
                     case "node":
@@ -59,6 +62,8 @@ function Projects() {
                       return <SiExpress title={tech} />;
                     case "tailwind":
                       return <BiLogoTailwindCss title={tech} />;
+                    case "redis":
+                      return <SiRedis title={tech} />;
                     case "mysql":
                       return <GrMysql title={tech} />;
                     case "html":
