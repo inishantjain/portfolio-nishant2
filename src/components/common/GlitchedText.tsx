@@ -9,7 +9,12 @@ function GlitchedText({ text }: { text: string }) {
   });
 
   return (
-    <div ref={targetRef} className={`glitch ${isIntersecting ? "animateGlitch" : ""}`}>
+    <div
+      ref={targetRef}
+      className={`border-b-accent200 border-opacity-50 border border-transparent glitch ${
+        isIntersecting ? "animateGlitch" : ""
+      }`}
+    >
       <span aria-hidden="true">{text}</span>
       {text}
       <span aria-hidden="true">{text}</span>

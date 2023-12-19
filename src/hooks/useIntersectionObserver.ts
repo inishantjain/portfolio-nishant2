@@ -6,17 +6,18 @@ function useIntersectionObserver<T extends HTMLElement>(options?: IntersectionOb
   const targetRef = useRef<T | null>(null);
 
   useEffect(() => {
+    const element = targetRef.current;
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
     }, options);
 
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, [options]);

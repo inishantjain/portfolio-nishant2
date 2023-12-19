@@ -7,9 +7,8 @@
 
 
 @layer utilities {
-    .profile-pic-container {
+    .animation-blob {
         overflow: hidden;
-        border: 8px solid cadetblue;
         animation: blobber 50s linear infinite;
     }
 

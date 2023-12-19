@@ -8,7 +8,7 @@ import MadeWith from "./components/sections/MadeWith";
 
 function App() {
   return (
-    <div className="relative font-mooli bg-dark bg-cover bg-fixed bg-no-repeat text-white">
+    <div className="relative font-mooli bg-[#0C1010] text-white">
       <Navbar />
       <Home />
       <Skills />

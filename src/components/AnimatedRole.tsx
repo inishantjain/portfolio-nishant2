@@ -20,7 +20,7 @@ const AnimatedRole = () => {
   return (
     <div className={`text-2xl md:text-3xl ${change && "animated-text-container"}`}>
       &nbsp;
-      <span className="text-red-700">
+      <span className="text-accent200">
         [&nbsp;<span className="text-white text-xl md:text-2xl">{roles[roleIdx]}</span>&nbsp;]
       </span>
     </div>

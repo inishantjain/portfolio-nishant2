@@ -6,7 +6,7 @@
 }
 
 .animateGlitch {
-    animation: glitch 725ms 2;
+    animation: glitch 100ms 2;
 }
 
 .glitch span {

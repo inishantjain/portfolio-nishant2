@@ -21,15 +21,16 @@ function Projects() {
         <h2 className="font-semibold font-exo text-5xl tracking-wider">
           <GlitchedText text="projects" />
         </h2>
-        <div className="z-0 grid justify-items-center lg:grid-cols-2 mt-16 gap-10">
+        <div className="z-0 grid justify-items-stretch lg:grid-cols-2 mt-16 gap-10">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="text-3xl group relative aspect-video min-h-[10rem] md:min-h-[16rem] shadow-[0px_0px_50px_1px_darkred]"
+              className="text-3xl group relative aspect-video shadow-[0px_0px_50px_1px] shadow-accent700"
             >
               <img
-                className="h-full transition-transform absolute aspect-video group-hover:-translate-x-8 group-hover:-translate-y-8 top-0 left-0 z-0"
+                className="transition-transform absolute aspect-video group-hover:-translate-x-8 group-hover:-translate-y-8 top-0 left-0 z-0"
                 loading="lazy"
+                width={768}
                 src={project.img_url}
                 alt={project.title}
               />
